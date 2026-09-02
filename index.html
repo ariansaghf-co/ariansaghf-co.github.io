@@ -1,495 +1,460 @@
-
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="ایران شیک - ارائه خدمات تخصصی سقف شیروانی، ویلایی و گالوانیزه در تهران">
-    <meta name="keywords" content="سقف شیروانی, سقف ویلایی, سقف گالوانیزه, ایران شیک, تهران">
-    <title>ایران شیک | خدمات تخصصی سقف</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        :root {
-            --primary: #2563eb;
-            --secondary: #1e40af;
-            --accent: #f59e0b;
-            --dark: #1f2937;
-            --light: #f9fafb;
-            --gray: #6b7280;
-        }
-
-        body {
-            font-family: Tahoma, Arial, sans-serif;
-            line-height: 1.8;
-            color: var(--dark);
-            background: var(--light);
-        }
-
-        /* هدر */
-        header {
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            color: white;
-            padding: 1rem 0;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
-
-        .nav-links {
-            display: flex;
-            list-style: none;
-            gap: 2rem;
-        }
-
-        .nav-links a {
-            color: white;
-            text-decoration: none;
-            transition: 0.3s;
-        }
-
-        .nav-links a:hover {
-            color: var(--accent);
-        }
-
-        .menu-toggle {
-            display: none;
-            background: none;
-            border: none;
-            color: white;
-            font-size: 1.5rem;
-            cursor: pointer;
-        }
-
-        /* بخش اصلی */
-        .hero {
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            color: white;
-            padding: 150px 20px 100px;
-            text-align: center;
-            margin-top: 60px;
-        }
-
-        .hero h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 12px 30px;
-            background: var(--accent);
-            color: white;
-            text-decoration: none;
-            border-radius: 50px;
-            transition: 0.3s;
-            border: none;
-            cursor: pointer;
-            font-size: 1rem;
-        }
-
-        .btn:hover {
-            background: #d97706;
-            transform: translateY(-3px);
-        }
-
-        /* بخش‌ها */
-        section {
-            padding: 80px 0;
-        }
-
-        .section-title {
-            text-align: center;
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            color: var(--dark);
-        }
-
-        .section-subtitle {
-            text-align: center;
-            color: var(--gray);
-            margin-bottom: 3rem;
-        }
-
-        /* کارت‌ها */
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-
-        .card {
-            background: white;
-            padding: 2rem;
-            border-radius: 15px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-            transition: 0.3s;
-            text-align: center;
-        }
-
-        .card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-        }
-
-        .card-icon {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-
-        .card h3 {
-            margin-bottom: 1rem;
-            color: var(--primary);
-        }
-
-        /* تماس با ما */
-        .contact-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-        }
-
-        .contact-card {
-            background: white;
-            padding: 2rem;
-            border-radius: 15px;
-            text-align: center;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-            transition: 0.3s;
-        }
-
-        .contact-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .contact-card a {
-            color: var(--primary);
-            text-decoration: none;
-        }
-
-        /* فوتر */
-        footer {
-            background: var(--dark);
-            color: white;
-            padding: 60px 0 20px;
-        }
-
-        .footer-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin-bottom: 2rem;
-        }
-
-        .footer-col h3 {
-            margin-bottom: 1rem;
-            color: var(--accent);
-        }
-
-        .footer-col ul {
-            list-style: none;
-        }
-
-        .footer-col ul li {
-            margin-bottom: 0.5rem;
-        }
-
-        .footer-col a {
-            color: white;
-            text-decoration: none;
-            transition: 0.3s;
-        }
-
-        .footer-col a:hover {
-            color: var(--accent);
-        }
-
-        .copyright {
-            text-align: center;
-            padding-top: 2rem;
-            border-top: 1px solid #374151;
-            color: var(--gray);
-        }
-
-        /* دکمه بازگشت به بالا */
-        .back-to-top {
-            position: fixed;
-            bottom: 30px;
-            left: 30px;
-            background: var(--primary);
-            color: white;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            border: none;
-            font-size: 1.5rem;
-            cursor: pointer;
-            display: none;
-            transition: 0.3s;
-            z-index: 999;
-        }
-
-        .back-to-top:hover {
-            background: var(--secondary);
-        }
-
-        .back-to-top.show {
-            display: block;
-        }
-
-        /* انیمیشن */
-        .fade-in {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: 0.6s;
-        }
-
-        .fade-in.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        /* واکنش‌گرا */
-        @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-                position: absolute;
-                top: 100%;
-                right: 0;
-                background: var(--primary);
-                width: 100%;
-                flex-direction: column;
-                padding: 1rem;
-            }
-
-            .nav-links.active {
-                display: flex;
-            }
-
-            .menu-toggle {
-                display: block;
-            }
-
-            .hero h1 {
-                font-size: 2rem;
-            }
-
-            .section-title {
-                font-size: 1.8rem;
-            }
-        }
-    </style>
+    <meta name="description" content="آریان سقف - ارائه دهنده خدمات تخصصی سقف شیروانی، ویلایی و گالوانیزه در تهران و سراسر ایران">
+    <meta name="keywords" content="سقف شیروانی, سقف ویلایی, سقف گالوانیزه, آریان سقف, اجرای سقف, تهران">
+    <meta name="author" content="ArianSaghf.ir">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph for Social Media -->
+    <meta property="og:title" content="آریان سقف | خدمات تخصصی سقف شیروانی">
+    <meta property="og:description" content="ارائه دهنده خدمات تخصصی سقف شیروانی، ویلایی و گالوانیزه">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ariansaghf.ir">
+    
+    <title>آریان سقف | خدمات تخصصی سقف شیروانی و ویلایی</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- هدر -->
-    <header>
+    <!-- Header -->
+    <header class="header" id="header">
         <div class="container">
-            <nav>
-                <div class="logo"> ایران شیک</div>
-                <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-                <ul class="nav-links" id="navLinks">
-                    <li><a href="#home">خانه</a></li>
-                    <li><a href="#services">خدمات</a></li>
-                    <li><a href="#portfolio">نمونه کارها</a></li>
-                    <li><a href="#contact">تماس با ما</a></li>
+            <nav class="navbar">
+                <a href="#" class="logo">
+                    <img src="images/logo.png" alt="آریان سقف" class="logo-img">
+                    <span class="logo-text">آریان سقف</span>
+                </a>
+                
+                <button class="nav-toggle" id="navToggle" aria-label="منو">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item"><a href="#home" class="nav-link active">صفحه اصلی</a></li>
+                    <li class="nav-item"><a href="#services" class="nav-link">خدمات</a></li>
+                    <li class="nav-item"><a href="#portfolio" class="nav-link">نمونه کارها</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">درباره ما</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">تماس با ما</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- بخش اصلی -->
+    <!-- Hero Section -->
     <section class="hero" id="home">
+        <div class="hero-overlay"></div>
         <div class="container">
-            <h1>ایران شیک</h1>
-            <p>ارائه خدمات تخصصی سقف شیروانی، ویلایی و گالوانیزه در تهران</p>
-            <a href="tel:+989363881280" class="btn">📞 تماس فوری</a>
+            <div class="hero-content">
+                <h1 class="hero-title fade-in">
+                    <span class="highlight">آریان سقف</span>
+                    <br>
+                    پیشرو در اجرای سقف‌های شیروانی و ویلایی
+                </h1>
+                <p class="hero-subtitle fade-in">
+                    با بیش از ۱۵ سال تجربه در ارائه خدمات تخصصی سقف شیروانی، گالوانیزه و ویلایی در تهران و سراسر ایران
+                </p>
+                <div class="hero-buttons fade-in">
+                    <a href="tel:+989363881280" class="btn btn-primary">
+                        <i class="fas fa-phone"></i>
+                        تماس فوری
+                    </a>
+                    <a href="#portfolio" class="btn btn-secondary">
+                        <i class="fas fa-images"></i>
+                        نمونه کارها
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <a href="#services" class="scroll-down">
+                <i class="fas fa-chevron-down"></i>
+            </a>
         </div>
     </section>
 
-    <!-- خدمات -->
-    <section id="services">
+    <!-- Services Section -->
+    <section class="services section" id="services">
         <div class="container">
-            <h2 class="section-title fade-in">خدمات ما</h2>
-            <p class="section-subtitle fade-in">با کیفیت‌ترین خدمات سقف در تهران</p>
-            <div class="grid">
-                <div class="card fade-in">
-                    <div class="card-icon">🏗️</div>
-                    <h3>سقف شیروانی</h3>
-                    <p>اجرای سقف شیروانی با بهترین متریال و کیفیت بالا برای ویلا و ساختمان مسکونی</p>
+            <div class="section-header">
+                <h2 class="section-title fade-in">خدمات ما</h2>
+                <p class="section-subtitle fade-in">ارائه بهترین خدمات با کیفیت بالا و قیمت مناسب</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3 class="service-title">سقف شیروانی</h3>
+                    <p class="service-desc">
+                        اجرای سقف شیروانی با بهترین متریال و استانداردهای روز دنیا برای ساختمان‌های مسکونی و ویلایی
+                    </p>
+                    <div class="service-image">
+                        <img src="images/service1.jpg" alt="سقف شیروانی">
+                    </div>
                 </div>
-                <div class="card fade-in">
-                    <div class="card-icon"></div>
-                    <h3>سقف ویلایی</h3>
-                    <p>طراحی و اجرای سقف ویلایی با ظاهر زیبا و مقاوم در برابر بارندگی</p>
+                
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-warehouse"></i>
+                    </div>
+                    <h3 class="service-title">سقف ویلایی</h3>
+                    <p class="service-desc">
+                        طراحی و اجرای سقف ویلایی با ظاهر زیبا، مقاوم در برابر بارندگی و شرایط جوی مختلف
+                    </p>
+                    <div class="service-image">
+                        <img src="images/service2.jpg" alt="سقف ویلایی">
+                    </div>
                 </div>
-                <div class="card fade-in">
-                    <div class="card-icon">🔩</div>
-                    <h3>سقف گالوانیزه</h3>
-                    <p>نصب ورق گالوانیزه مقاوم در برابر رطوبت، مناسب سقف‌های شیبدار</p>
+                
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <h3 class="service-title">سقف گالوانیزه</h3>
+                    <p class="service-desc">
+                        نصب ورق گالوانیزه با کیفیت بالا، مقاوم در برابر رطوبت و زنگ‌زدگی برای سقف‌های شیبدار
+                    </p>
+                    <div class="service-image">
+                        <img src="images/service3.jpg" alt="سقف گالوانیزه">
+                    </div>
                 </div>
-                <div class="card fade-in">
-                    <div class="card-icon">🎨</div>
-                    <h3>آب‌بندی و تعمیر</h3>
-                    <p>رفع نشتی، تعویض پوشش، ترمیم خرابی و آب‌بندی سقف‌های قدیمی</p>
+                
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 class="service-title">تعمیر و بازسازی</h3>
+                    <p class="service-desc">
+                        تعمیر، بازسازی و آب‌بندی سقف‌های قدیمی با ضمانت کیفیت و قیمت مناسب
+                    </p>
+                    <div class="service-image">
+                        <img src="images/service4.jpg" alt="تعمیر سقف">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- نمونه کارها -->
-    <section id="portfolio" style="background: white;">
+    <!-- Portfolio Section -->
+    <section class="portfolio section" id="portfolio">
         <div class="container">
-            <h2 class="section-title fade-in">نمونه کارها</h2>
-            <p class="section-subtitle fade-in">برخی از پروژه‌های اجرایی در تهران</p>
-            <div class="grid">
-                <div class="card fade-in">
-                    <div class="card-icon">📸</div>
-                    <h3>پروژه </h3>
-                    <p>اجرای سقف شیروانی ویلایی در شمال تهران</p>
+            <div class="section-header">
+                <h2 class="section-title fade-in">نمونه کارها</h2>
+                <p class="section-subtitle fade-in">برخی از پروژه‌های اجرایی ما در تهران و سراسر ایران</p>
+            </div>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-item fade-in">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio1.jpg" alt="پروژه ۱">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>اجرای سقف شیروانی ویلا</h3>
+                                <p>شمال تهران</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="card fade-in">
-                    <div class="card-icon">📸</div>
-                    <h3>پروژه ۲</h3>
-                    <p>نصب سقف گالوانیزه ساختمان مسکونی</p>
+                
+                <div class="portfolio-item fade-in">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio2.jpg" alt="پروژه ۲">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>سقف گالوانیزه ساختمان</h3>
+                                <p>تهران</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="card fade-in">
-                    <div class="card-icon"></div>
-                    <h3>پروژه ۳</h3>
-                    <p>آب‌بندی و تعمیر سقف قدیمی</p>
+                
+                <div class="portfolio-item fade-in">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio3.jpg" alt="پروژه ۳">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>بازسازی سقف قدیمی</h3>
+                                <p>کرج</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item fade-in">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio4.jpg" alt="پروژه ۴">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>سقف ویلایی مدرن</h3>
+                                <p>لواسان</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- تماس با ما -->
-    <section id="contact">
+    <!-- About Section -->
+    <section class="about section" id="about">
         <div class="container">
-            <h2 class="section-title fade-in">تماس با ما</h2>
-            <p class="section-subtitle fade-in">برای مشاوره رایگان با ما در ارتباط باشید</p>
-            <div class="contact-grid">
-                <div class="contact-card fade-in">
-                    <div class="card-icon">📞</div>
-                    <h3>تلفن تماس</h3>
-                    <p><a href="tel:+989363881280" dir="ltr">0936 388 1280</a></p>
+            <div class="about-content">
+                <div class="about-image fade-in">
+                    <img src="images/about.jpg" alt="درباره آریان سقف">
                 </div>
-                <div class="contact-card fade-in">
-                    <div class="card-icon">💬</div>
-                    <h3>واتساپ</h3>
-                    <p><a href="https://wa.me/989363881280" target="_blank" dir="ltr">0936 388 1280</a></p>
-                </div>
-                <div class="contact-card fade-in">
-                    <div class="card-icon">✈️</div>
-                    <h3>تلگرام</h3>
-                    <p><a href="https://t.me/ariansaghf" target="_blank">@ariansaghf</a></p>
-                </div>
-                <div class="contact-card fade-in">
-                    <div class="card-icon">📷</div>
-                    <h3>اینستاگرام</h3>
-                    <p><a href="https://instagram.com/ariansaghf" target="_blank">@ariansaghf</a></p>
+                <div class="about-text fade-in">
+                    <h2 class="section-title">درباره آریان سقف</h2>
+                    <p>
+                        شرکت آریان سقف با بیش از ۱۵ سال تجربه در زمینه طراحی و اجرای انواع سقف‌های شیروانی، ویلایی و گالوانیزه، آماده ارائه خدمات با کیفیت به شما عزیزان می‌باشد.
+                    </p>
+                    <p>
+                        ما با بهره‌گیری از تیم مجرب و متخصص، استفاده از بهترین متریال و رعایت استانداردهای فنی، افتخار داریم که تاکنون صدها پروژه موفق را در تهران و سراسر ایران به انجام رسانده‌ایم.
+                    </p>
+                    
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>ضمانت کیفیت اجرا</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>استفاده از بهترین متریال</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>قیمت مناسب و رقابتی</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>مشاوره رایگان</span>
+                        </div>
+                    </div>
+                    
+                    <a href="#contact" class="btn btn-primary">تماس با ما</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- فوتر -->
-    <footer>
+    <!-- Stats Section -->
+    <section class="stats section">
         <div class="container">
-            <div class="footer-grid">
+            <div class="stats-grid">
+                <div class="stat-item fade-in">
+                    <div class="stat-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <div class="stat-number" data-target="500">0</div>
+                    <div class="stat-label">پروژه موفق</div>
+                </div>
+                
+                <div class="stat-item fade-in">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-number" data-target="450">0</div>
+                    <div class="stat-label">مشتری راضی</div>
+                </div>
+                
+                <div class="stat-item fade-in">
+                    <div class="stat-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="stat-number" data-target="15">0</div>
+                    <div class="stat-label">سال تجربه</div>
+                </div>
+                
+                <div class="stat-item fade-in">
+                    <div class="stat-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="stat-number" data-target="24">0</div>
+                    <div class="stat-label">ساعت پشتیبانی</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title fade-in">تماس با ما</h2>
+                <p class="section-subtitle fade-in">برای مشاوره رایگان و دریافت اطلاعات بیشتر با ما در ارتباط باشید</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info fade-in">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>تلفن تماس</h3>
+                            <a href="tel:+989363881280" dir="ltr">0936 388 1280</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>واتساپ</h3>
+                            <a href="https://wa.me/989363881280" target="_blank" dir="ltr">0936 388 1280</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-telegram-plane"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>تلگرام</h3>
+                            <a href="https://t.me/ariansaghf" target="_blank">@ariansaghf</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>اینستاگرام</h3>
+                            <a href="https://instagram.com/ariansaghf" target="_blank">@ariansaghf</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>آدرس</h3>
+                            <p>تهران، آماده ارائه خدمات در سراسر ایران</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>ساعات کاری</h3>
+                            <p>شنبه تا پنجشنبه: ۹ صبح تا ۶ عصر</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form fade-in">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="نام و نام خانوادگی" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="شماره تماس" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" placeholder="پیام شما..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <i class="fas fa-paper-plane"></i>
+                            ارسال پیام
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
                 <div class="footer-col">
-                    <h3>درباره ما</h3>
-                    <p>ایران شیک با سال‌ها تجربه در زمینه ارائه خدمات تخصصی سقف، آماده خدمت‌رسانی به شما عزیزان می‌باشد.</p>
+                    <h3>درباره آریان سقف</h3>
+                    <p>
+                        آریان سقف با بیش از ۱۵ سال تجربه در زمینه اجرای سقف‌های شیروانی، ویلایی و گالوانیزه، آماده ارائه خدمات با کیفیت به شما عزیزان می‌باشد.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://t.me/ariansaghf" target="_blank" aria-label="تلگرام">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="https://instagram.com/ariansaghf" target="_blank" aria-label="اینستاگرام">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/989363881280" target="_blank" aria-label="واتساپ">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
                 </div>
+                
                 <div class="footer-col">
                     <h3>دسترسی سریع</h3>
                     <ul>
-                        <li><a href="#services">خدمات ایران شیک</a></li>
+                        <li><a href="#home">صفحه اصلی</a></li>
+                        <li><a href="#services">خدمات</a></li>
                         <li><a href="#portfolio">نمونه کارها</a></li>
-                        <li><a href="#home">درباره ما</a></li>
+                        <li><a href="#about">درباره ما</a></li>
                         <li><a href="#contact">تماس با ما</a></li>
                     </ul>
                 </div>
+                
                 <div class="footer-col">
-                    <h3>ساعات کاری</h3>
-                    <p>شنبه تا پنجشنبه</p>
-                    <p dir="ltr">9:00 AM - 6:00 PM</p>
+                    <h3>خدمات ما</h3>
+                    <ul>
+                        <li><a href="#services">سقف شیروانی</a></li>
+                        <li><a href="#services">سقف ویلایی</a></li>
+                        <li><a href="#services">سقف گالوانیزه</a></li>
+                        <li><a href="#services">تعمیر و بازسازی</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>اطلاعات تماس</h3>
+                    <ul class="contact-list">
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+989363881280" dir="ltr">0936 388 1280</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:info@ariansaghf.ir">info@ariansaghf.ir</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>تهران، سراسر ایران</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div class="copyright">
-                <p>تمامی حقوق محفوظ است © 1405 | ایران شیک</p>
+            
+            <div class="footer-bottom">
+                <p>تمامی حقوق محفوظ است © ۱۴۰۳ | آریان سقف - ArianSaghf.ir</p>
             </div>
         </div>
     </footer>
 
-    <!-- دکمه بازگشت به بالا -->
-    <button class="back-to-top" id="backToTop" onclick="scrollToTop()">↑</button>
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="بازگشت به بالا">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
-    <script>
-        // منوی موبایل
-        function toggleMenu() {
-            document.getElementById('navLinks').classList.toggle('active');
-        }
-
-        // دکمه بازگشت به بالا
-        window.addEventListener('scroll', function() {
-            const btn = document.getElementById('backToTop');
-            if (window.scrollY > 300) {
-                btn.classList.add('show');
-            } else {
-                btn.classList.remove('show');
-            }
-        });
-
-        function scrollToTop() {
-            window.scrollTo({top: 0, behavior: 'smooth'});
-        }
-
-        // انیمیشن fade-in
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
-        }, {threshold: 0.1});
-
-        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
-
-        // بستن منو با کلیک روی لینک
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                document.getElementById('navLinks').classList.remove('active');
-            });
-        });
-    </script>
-
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
 </body>
 </html>
