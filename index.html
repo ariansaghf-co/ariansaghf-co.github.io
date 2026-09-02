@@ -1,460 +1,506 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="آریان سقف - ارائه دهنده خدمات تخصصی سقف شیروانی، ویلایی و گالوانیزه در تهران و سراسر ایران">
-    <meta name="keywords" content="سقف شیروانی, سقف ویلایی, سقف گالوانیزه, آریان سقف, اجرای سقف, تهران">
-    <meta name="author" content="ArianSaghf.ir">
-    <meta name="robots" content="index, follow">
-    
-    <!-- Open Graph for Social Media -->
-    <meta property="og:title" content="آریان سقف | خدمات تخصصی سقف شیروانی">
-    <meta property="og:description" content="ارائه دهنده خدمات تخصصی سقف شیروانی، ویلایی و گالوانیزه">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://ariansaghf.ir">
-    
-    <title>آریان سقف | خدمات تخصصی سقف شیروانی و ویلایی</title>
-    
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-    
-    <!-- Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Styles -->
-    <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>آریان سقف | اجرای سقف شیروانی، ورق گالوانیزه، خرپاسازی و ایرانیت در تهران</title>
+
+<meta name="description" content="آریان سقف: اجرای تخصصی سقف‌های شیروانی و ویلایی با ورق گالوانیزه، ایرانیت و خرپاسازی در تهران. مشاهده نمونه‌کارها، مشاوره و برآورد قیمت. تماس: 09363881280">
+
+<meta name="keywords" content="سقف شیروانی, سقف ویلایی, ورق گالوانیزه, خرپاسازی, ایرانیت, اجرای سقف شیروانی در تهران, قیمت سقف شیروانی, آریان سقف, ariansaghf">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "آریان سقف",
+  "alternateName": "ariansaghf",
+  "description": "اجرای تخصصی سقف‌های شیروانی و ویلایی با ورق گالوانیزه، ایرانیت و خرپاسازی در تهران.",
+  "telephone": "+989363881280",
+  "areaServed": "تهران",
+  "sameAs": [
+    "https://instagram.com/ariansaghf"
+  ]
+}
+</script>
+
+<style>
+:root {
+  --primary: #0f766e;
+  --dark: #111827;
+  --muted: #6b7280;
+  --bg: #f9fafb;
+  --white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Tahoma, Arial, sans-serif;
+  background: var(--white);
+  color: var(--dark);
+  line-height: 1.9;
+}
+
+.container {
+  width: min(1100px, 92%);
+  margin: auto;
+}
+
+header {
+  background: #0f172a;
+  color: #fff;
+  padding: 16px 0;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.logo span {
+  color: #14b8a6;
+}
+
+.nav nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.nav nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.nav-call {
+  background: #14b8a6;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-weight: 700;
+}
+
+.hero {
+  background: linear-gradient(rgba(15,23,42,.82), rgba(15,23,42,.82)), #134e4a;
+  color: #fff;
+  text-align: center;
+  padding: 90px 0;
+}
+
+.hero h1 {
+  font-size: 34px;
+  margin-bottom: 14px;
+}
+
+.hero p {
+  color: #e5e7eb;
+  max-width: 800px;
+  margin: auto;
+}
+
+.btn {
+  display: inline-block;
+  background: #14b8a6;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 22px;
+  border-radius: 10px;
+  margin-top: 18px;
+  font-weight: 700;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid #14b8a6;
+  margin-inline-start: 10px;
+}
+
+.btn-instagram {
+  background: #e1306c;
+}
+
+.section {
+  padding: 60px 0;
+}
+
+.section.alt {
+  background: var(--bg);
+}
+
+.section h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.sub {
+  color: var(--muted);
+  margin-bottom: 28px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 22px;
+  box-shadow: 0 1px 8px rgba(0,0,0,.04);
+}
+
+.badge {
+  display: inline-block;
+  background: #ccfbf1;
+  color: #0f766e;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.shot {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 1px 8px rgba(0,0,0,.04);
+}
+
+.shot img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.shot figcaption {
+  padding: 12px 16px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #0f766e;
+}
+
+.cta {
+  background: #0f766e;
+  color: #fff;
+  text-align: center;
+  padding: 60px 0;
+}
+
+.cta .btn {
+  background: #fff;
+  color: #0f766e;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+}
+
+.contact-card a {
+  display: block;
+  color: #0f766e;
+  text-decoration: none;
+  font-weight: 700;
+  margin-top: 6px;
+}
+
+footer {
+  background: #0f172a;
+  color: #cbd5e1;
+  text-align: center;
+  padding: 22px 0;
+  font-size: 14px;
+}
+
+.whatsapp {
+  position: fixed;
+  bottom: 18px;
+  left: 18px;
+  background: #25d366;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 16px;
+  border-radius: 999px;
+  font-weight: 700;
+  box-shadow: 0 8px 24px rgba(0,0,0,.2);
+}
+
+@media (max-width: 640px) {
+  .hero h1 {
+    font-size: 27px;
+  }
+
+  .btn {
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+  }
+
+  .btn-outline {
+    margin-inline-start: 0;
+  }
+}
+</style>
 </head>
+
 <body>
 
-    <!-- Header -->
-    <header class="header" id="header">
-        <div class="container">
-            <nav class="navbar">
-                <a href="#" class="logo">
-                    <img src="images/logo.png" alt="آریان سقف" class="logo-img">
-                    <span class="logo-text">آریان سقف</span>
-                </a>
-                
-                <button class="nav-toggle" id="navToggle" aria-label="منو">
-                    <i class="fas fa-bars"></i>
-                </button>
-                
-                <ul class="nav-menu" id="navMenu">
-                    <li class="nav-item"><a href="#home" class="nav-link active">صفحه اصلی</a></li>
-                    <li class="nav-item"><a href="#services" class="nav-link">خدمات</a></li>
-                    <li class="nav-item"><a href="#portfolio" class="nav-link">نمونه کارها</a></li>
-                    <li class="nav-item"><a href="#about" class="nav-link">درباره ما</a></li>
-                    <li class="nav-item"><a href="#contact" class="nav-link">تماس با ما</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+<header>
+  <div class="container nav">
+    <div class="logo">آریان <span>سقف</span></div>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero-overlay"></div>
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-title fade-in">
-                    <span class="highlight">آریان سقف</span>
-                    <br>
-                    پیشرو در اجرای سقف‌های شیروانی و ویلایی
-                </h1>
-                <p class="hero-subtitle fade-in">
-                    با بیش از ۱۵ سال تجربه در ارائه خدمات تخصصی سقف شیروانی، گالوانیزه و ویلایی در تهران و سراسر ایران
-                </p>
-                <div class="hero-buttons fade-in">
-                    <a href="tel:+989363881280" class="btn btn-primary">
-                        <i class="fas fa-phone"></i>
-                        تماس فوری
-                    </a>
-                    <a href="#portfolio" class="btn btn-secondary">
-                        <i class="fas fa-images"></i>
-                        نمونه کارها
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="hero-scroll">
-            <a href="#services" class="scroll-down">
-                <i class="fas fa-chevron-down"></i>
-            </a>
-        </div>
-    </section>
+    <nav>
+      <a href="#services">خدمات</a>
+      <a href="#gallery">نمونه‌کارها</a>
+      <a href="#why">چرا ما؟</a>
+      <a href="#contact">تماس</a>
+      <a href="tel:+989363881280" class="nav-call">۰۹۳۳۸۸۲۸۰</a>
+    </nav>
+  </div>
+</header>
 
-    <!-- Services Section -->
-    <section class="services section" id="services">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title fade-in">خدمات ما</h2>
-                <p class="section-subtitle fade-in">ارائه بهترین خدمات با کیفیت بالا و قیمت مناسب</p>
-            </div>
-            
-            <div class="services-grid">
-                <div class="service-card fade-in">
-                    <div class="service-icon">
-                        <i class="fas fa-home"></i>
-                    </div>
-                    <h3 class="service-title">سقف شیروانی</h3>
-                    <p class="service-desc">
-                        اجرای سقف شیروانی با بهترین متریال و استانداردهای روز دنیا برای ساختمان‌های مسکونی و ویلایی
-                    </p>
-                    <div class="service-image">
-                        <img src="images/service1.jpg" alt="سقف شیروانی">
-                    </div>
-                </div>
-                
-                <div class="service-card fade-in">
-                    <div class="service-icon">
-                        <i class="fas fa-warehouse"></i>
-                    </div>
-                    <h3 class="service-title">سقف ویلایی</h3>
-                    <p class="service-desc">
-                        طراحی و اجرای سقف ویلایی با ظاهر زیبا، مقاوم در برابر بارندگی و شرایط جوی مختلف
-                    </p>
-                    <div class="service-image">
-                        <img src="images/service2.jpg" alt="سقف ویلایی">
-                    </div>
-                </div>
-                
-                <div class="service-card fade-in">
-                    <div class="service-icon">
-                        <i class="fas fa-layer-group"></i>
-                    </div>
-                    <h3 class="service-title">سقف گالوانیزه</h3>
-                    <p class="service-desc">
-                        نصب ورق گالوانیزه با کیفیت بالا، مقاوم در برابر رطوبت و زنگ‌زدگی برای سقف‌های شیبدار
-                    </p>
-                    <div class="service-image">
-                        <img src="images/service3.jpg" alt="سقف گالوانیزه">
-                    </div>
-                </div>
-                
-                <div class="service-card fade-in">
-                    <div class="service-icon">
-                        <i class="fas fa-tools"></i>
-                    </div>
-                    <h3 class="service-title">تعمیر و بازسازی</h3>
-                    <p class="service-desc">
-                        تعمیر، بازسازی و آب‌بندی سقف‌های قدیمی با ضمانت کیفیت و قیمت مناسب
-                    </p>
-                    <div class="service-image">
-                        <img src="images/service4.jpg" alt="تعمیر سقف">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Portfolio Section -->
-    <section class="portfolio section" id="portfolio">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title fade-in">نمونه کارها</h2>
-                <p class="section-subtitle fade-in">برخی از پروژه‌های اجرایی ما در تهران و سراسر ایران</p>
-            </div>
-            
-            <div class="portfolio-grid">
-                <div class="portfolio-item fade-in">
-                    <div class="portfolio-image">
-                        <img src="images/portfolio1.jpg" alt="پروژه ۱">
-                        <div class="portfolio-overlay">
-                            <div class="portfolio-info">
-                                <h3>اجرای سقف شیروانی ویلا</h3>
-                                <p>شمال تهران</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="portfolio-item fade-in">
-                    <div class="portfolio-image">
-                        <img src="images/portfolio2.jpg" alt="پروژه ۲">
-                        <div class="portfolio-overlay">
-                            <div class="portfolio-info">
-                                <h3>سقف گالوانیزه ساختمان</h3>
-                                <p>تهران</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="portfolio-item fade-in">
-                    <div class="portfolio-image">
-                        <img src="images/portfolio3.jpg" alt="پروژه ۳">
-                        <div class="portfolio-overlay">
-                            <div class="portfolio-info">
-                                <h3>بازسازی سقف قدیمی</h3>
-                                <p>کرج</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="portfolio-item fade-in">
-                    <div class="portfolio-image">
-                        <img src="images/portfolio4.jpg" alt="پروژه ۴">
-                        <div class="portfolio-overlay">
-                            <div class="portfolio-info">
-                                <h3>سقف ویلایی مدرن</h3>
-                                <p>لواسان</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<section class="hero">
+  <div class="container">
+    <h1>اجرای سقف شیروانی و ویلایی در تهران</h1>
 
-    <!-- About Section -->
-    <section class="about section" id="about">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-image fade-in">
-                    <img src="images/about.jpg" alt="درباره آریان سقف">
-                </div>
-                <div class="about-text fade-in">
-                    <h2 class="section-title">درباره آریان سقف</h2>
-                    <p>
-                        شرکت آریان سقف با بیش از ۱۵ سال تجربه در زمینه طراحی و اجرای انواع سقف‌های شیروانی، ویلایی و گالوانیزه، آماده ارائه خدمات با کیفیت به شما عزیزان می‌باشد.
-                    </p>
-                    <p>
-                        ما با بهره‌گیری از تیم مجرب و متخصص، استفاده از بهترین متریال و رعایت استانداردهای فنی، افتخار داریم که تاکنون صدها پروژه موفق را در تهران و سراسر ایران به انجام رسانده‌ایم.
-                    </p>
-                    
-                    <div class="about-features">
-                        <div class="feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span>ضمانت کیفیت اجرا</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span>استفاده از بهترین متریال</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span>قیمت مناسب و رقابتی</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span>مشاوره رایگان</span>
-                        </div>
-                    </div>
-                    
-                    <a href="#contact" class="btn btn-primary">تماس با ما</a>
-                </div>
-            </div>
-        </div>
-    </section>
+    <p>
+      آریان سقف: اجرای انواع سقف شیروانی با پوشش ورق گالوانیزه، ایرانیت و ورق‌های شیب‌دار برای ویلا، سوله، پارکینگ، آلاچیق و ساختمان‌های مسکونی.
+      خرپاسازی، نصب پوشش، آب‌بندی و اجرای سریع با کیفیت بالا.
+    </p>
 
-    <!-- Stats Section -->
-    <section class="stats section">
-        <div class="container">
-            <div class="stats-grid">
-                <div class="stat-item fade-in">
-                    <div class="stat-icon">
-                        <i class="fas fa-project-diagram"></i>
-                    </div>
-                    <div class="stat-number" data-target="500">0</div>
-                    <div class="stat-label">پروژه موفق</div>
-                </div>
-                
-                <div class="stat-item fade-in">
-                    <div class="stat-icon">
-                        <i class="fas fa-users"></i>
-                    </div>
-                    <div class="stat-number" data-target="450">0</div>
-                    <div class="stat-label">مشتری راضی</div>
-                </div>
-                
-                <div class="stat-item fade-in">
-                    <div class="stat-icon">
-                        <i class="fas fa-award"></i>
-                    </div>
-                    <div class="stat-number" data-target="15">0</div>
-                    <div class="stat-label">سال تجربه</div>
-                </div>
-                
-                <div class="stat-item fade-in">
-                    <div class="stat-icon">
-                        <i class="fas fa-clock"></i>
-                    </div>
-                    <div class="stat-number" data-target="24">0</div>
-                    <div class="stat-label">ساعت پشتیبانی</div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <a href="tel:+989363881280" class="btn">تماس فوری</a>
+    <a href="https://wa.me/989363881280" class="btn btn-outline">مشاوره واتساپ</a>
+    <a href="https://instagram.com/ariansaghf" target="_blank" rel="noopener" class="btn btn-instagram">اینستاگرام آریان سقف</a>
+  </div>
+</section>
 
-    <!-- Contact Section -->
-    <section class="contact section" id="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title fade-in">تماس با ما</h2>
-                <p class="section-subtitle fade-in">برای مشاوره رایگان و دریافت اطلاعات بیشتر با ما در ارتباط باشید</p>
-            </div>
-            
-            <div class="contact-content">
-                <div class="contact-info fade-in">
-                    <div class="contact-card">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone-alt"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h3>تلفن تماس</h3>
-                            <a href="tel:+989363881280" dir="ltr">0936 388 1280</a>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-card">
-                        <div class="contact-icon">
-                            <i class="fab fa-whatsapp"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h3>واتساپ</h3>
-                            <a href="https://wa.me/989363881280" target="_blank" dir="ltr">0936 388 1280</a>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-card">
-                        <div class="contact-icon">
-                            <i class="fab fa-telegram-plane"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h3>تلگرام</h3>
-                            <a href="https://t.me/ariansaghf" target="_blank">@ariansaghf</a>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-card">
-                        <div class="contact-icon">
-                            <i class="fab fa-instagram"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h3>اینستاگرام</h3>
-                            <a href="https://instagram.com/ariansaghf" target="_blank">@ariansaghf</a>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-card">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h3>آدرس</h3>
-                            <p>تهران، آماده ارائه خدمات در سراسر ایران</p>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-card">
-                        <div class="contact-icon">
-                            <i class="fas fa-clock"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h3>ساعات کاری</h3>
-                            <p>شنبه تا پنجشنبه: ۹ صبح تا ۶ عصر</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="contact-form fade-in">
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="نام و نام خانوادگی" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="tel" id="phone" name="phone" placeholder="شماره تماس" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" name="message" rows="5" placeholder="پیام شما..." required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-block">
-                            <i class="fas fa-paper-plane"></i>
-                            ارسال پیام
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-col">
-                    <h3>درباره آریان سقف</h3>
-                    <p>
-                        آریان سقف با بیش از ۱۵ سال تجربه در زمینه اجرای سقف‌های شیروانی، ویلایی و گالوانیزه، آماده ارائه خدمات با کیفیت به شما عزیزان می‌باشد.
-                    </p>
-                    <div class="social-links">
-                        <a href="https://t.me/ariansaghf" target="_blank" aria-label="تلگرام">
-                            <i class="fab fa-telegram"></i>
-                        </a>
-                        <a href="https://instagram.com/ariansaghf" target="_blank" aria-label="اینستاگرام">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="https://wa.me/989363881280" target="_blank" aria-label="واتساپ">
-                            <i class="fab fa-whatsapp"></i>
-                        </a>
-                    </div>
-                </div>
-                
-                <div class="footer-col">
-                    <h3>دسترسی سریع</h3>
-                    <ul>
-                        <li><a href="#home">صفحه اصلی</a></li>
-                        <li><a href="#services">خدمات</a></li>
-                        <li><a href="#portfolio">نمونه کارها</a></li>
-                        <li><a href="#about">درباره ما</a></li>
-                        <li><a href="#contact">تماس با ما</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-col">
-                    <h3>خدمات ما</h3>
-                    <ul>
-                        <li><a href="#services">سقف شیروانی</a></li>
-                        <li><a href="#services">سقف ویلایی</a></li>
-                        <li><a href="#services">سقف گالوانیزه</a></li>
-                        <li><a href="#services">تعمیر و بازسازی</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-col">
-                    <h3>اطلاعات تماس</h3>
-                    <ul class="contact-list">
-                        <li>
-                            <i class="fas fa-phone"></i>
-                            <a href="tel:+989363881280" dir="ltr">0936 388 1280</a>
-                        </li>
-                        <li>
-                            <i class="fas fa-envelope"></i>
-                            <a href="mailto:info@ariansaghf.ir">info@ariansaghf.ir</a>
-                        </li>
-                        <li>
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>تهران، سراسر ایران</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <p>تمامی حقوق محفوظ است © ۱۴۰۳ | آریان سقف - ArianSaghf.ir</p>
-            </div>
-        </div>
-    </footer>
+<section id="services" class="section">
+  <div class="container">
+    <h2>خدمات آریان سقف</h2>
+    <p class="sub">اجرای کامل سقف شیروانی از خرپاسازی تا نصب پوشش نهایی</p>
 
-    <!-- Back to Top Button -->
-    <button class="back-to-top" id="backToTop" aria-label="بازگشت به بالا">
-        <i class="fas fa-arrow-up"></i>
-    </button>
+    <div class="grid">
+      <div class="card">
+        <span class="badge">سقف شیروانی</span>
+        <h3>اجرای سقف شیروانی</h3>
+        <p>اجرای سقف شیروانی برای ویلا، باغ، سوله و ساختمان‌های مسکونی با طراحی مناسب و آب‌بندی استاندارد.</p>
+      </div>
 
-    <!-- Scripts -->
-    <script src="js/main.js"></script>
+      <div class="card">
+        <span class="badge">ورق گالوانیزه</span>
+        <h3>پوشش ورق گالوانیزه</h3>
+        <p>نصب ورق گالوانیزه با مقاومت مناسب در برابر رطوبت و شرایط جوی، مناسب سقف‌های شیب‌دار.</p>
+      </div>
+
+      <div class="card">
+        <span class="badge">خرپاسازی</span>
+        <h3>خرپاسازی فلزی و چوبی</h3>
+        <p>ساخت و اجرای خرپای سقف با استحکام مناسب، اندازه‌گیری دقیق و نصب حرفه‌ای.</p>
+      </div>
+
+      <div class="card">
+        <span class="badge">ایرانیت</span>
+        <h3>پوشش ایرانیت</h3>
+        <p>اجرای پوشش ایرانیت برای سقف ویلا، سوله، پارکینگ و فضاهای جانبی با نصب سریع و قیمت مناسب.</p>
+      </div>
+
+      <div class="card">
+        <span class="badge">سقف ویلایی</span>
+        <h3>سقف ویلایی</h3>
+        <p>طراحی و اجرای سقف ویلایی شیب‌دار با ظاهر زیبا و عملکرد مناسب در برابر بارندگی.</p>
+      </div>
+
+      <div class="card">
+        <span class="badge">تعمیر و آب‌بندی</span>
+        <h3>تعمیر و آب‌بندی سقف</h3>
+        <p>رفع نشتی، تعویض پوشش، ترمیم خرپا و بهبود آب‌بندی سقف‌های قدیمی.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="gallery" class="section alt">
+  <div class="container">
+    <h2>نمونه‌کارهای آریان سقف</h2>
+    <p class="sub">تصاویری از پروژه‌های اجرایی سقف شیروانی، ویلایی، خرپاسازی و پوشش ورق در تهران</p>
+
+    <div class="gallery">
+      <figure class="shot">
+        <img src="۱.jpg" alt="اجرای سقف شیروانی ویلایی - آریان سقف" loading="lazy" onerror="this.src='1.jpg'">
+        <figcaption>اجرای سقف شیروانی ویلایی</figcaption>
+      </figure>
+
+      <figure class="shot">
+        <img src="۲.jpg" alt="پوشش ورق گالوانیزه سقف - آریان سقف" loading="lazy" onerror="this.src='2.jpg'">
+        <figcaption>پوشش ورق گالوانیزه</figcaption>
+      </figure>
+
+      <figure class="shot">
+        <img src="۳.jpg" alt="خرپاسازی سقف شیروانی - آریان سقف" loading="lazy" onerror="this.src='3.jpg'">
+        <figcaption>خرپاسازی سقف</figcaption>
+      </figure>
+
+      <figure class="shot">
+        <img src="۴.jpg" alt="اجرای پوشش ایرانیت - آریان سقف" loading="lazy" onerror="this.src='4.jpg'">
+        <figcaption>اجرای پوشش ایرانیت</figcaption>
+      </figure>
+
+      <figure class="shot">
+        <img src="۵.jpg" alt="سقف ویلایی شیب دار - آریان سقف" loading="lazy" onerror="this.src='5.jpg'">
+        <figcaption>سقف ویلایی شیب‌دار</figcaption>
+      </figure>
+
+      <figure class="shot">
+        <img src="۶.jpg" alt="پروژه اجرایی سقف شیروانی تهران - آریان سقف" loading="lazy" onerror="this.src='6.jpg'">
+        <figcaption>پروژه اجرایی سقف شیروانی</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+
+<section id="why" class="section">
+  <div class="container">
+    <h2>چرا آریان سقف؟</h2>
+    <p class="sub">هدف ما اجرای سقفی محکم، زیبا و بدون نشتی است.</p>
+
+    <div class="grid">
+      <div class="card">
+        <h3>اجرای سریع</h3>
+        <p>برنامه‌ریزی و اجرای پروژه در کوتاه‌ترین زمان ممکن.</p>
+      </div>
+
+      <div class="card">
+        <h3>کیفیت اجرا</h3>
+        <p>دقت در خرپاسازی، نصب پوشش و آب‌بندی برای جلوگیری از مشکلات آینده.</p>
+      </div>
+
+      <div class="card">
+        <h3>قیمت مناسب</h3>
+        <p>برآورد هزینه قبل از شروع کار و ارائه قیمت منصفانه.</p>
+      </div>
+
+      <div class="card">
+        <h3>خدمات در تهران</h3>
+        <p>مشاوره، بازدید و اجرای سقف شیروانی و ویلایی در تهران.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="process" class="section alt">
+  <div class="container">
+    <h2>مراحل اجرای سقف</h2>
+    <p class="sub">کار را از بازدید تا تحویل نهایی انجام می‌دهیم.</p>
+
+    <div class="grid">
+      <div class="card">
+        <h3>۱. تماس و مشاوره</h3>
+        <p>با شماره ۰۹۳۶۳۸۸۱۲۸۰ تماس بگیرید یا در واتساپ پیام بدهید.</p>
+      </div>
+
+      <div class="card">
+        <h3>۲. بازدید از محل</h3>
+        <p>بررسی محل، اندازه‌گیری و بررسی نوع سازه.</p>
+      </div>
+
+      <div class="card">
+        <h3>۳. برآورد هزینه</h3>
+        <p>ارائه قیمت نهایی بر اساس نوع پوشش، خرپا و متراژ کار.</p>
+      </div>
+
+      <div class="card">
+        <h3>۴. اجرا و تحویل</h3>
+        <p>خرپاسازی، نصب پوشش، آب‌بندی و تحویل نهایی پروژه.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="cta">
+  <div class="container">
+    <h2>برای برآورد قیمت سقف شیروانی در تهران همین حالا تماس بگیرید</h2>
+    <p>مشاوره رایگان، بازدید از محل و اجرای تخصصی سقف ویلایی و شیروانی</p>
+
+    <a href="tel:+989363881280" class="btn">تماس مستقیم</a>
+    <a href="https://wa.me/989363881280" class="btn btn-outline">ارسال پیام در واتساپ</a>
+  </div>
+</section>
+
+
+<section id="contact" class="section alt">
+  <div class="container">
+    <h2>تماس با آریان سقف</h2>
+    <p class="sub">برای مشاوره و استعلام قیمت با ما در ارتباط باشید.</p>
+
+    <div class="contact-grid">
+      <div class="card contact-card">
+        <h3>تلفن تماس</h3>
+        <a href="tel:+989363881280">۰۹۳۶۳۸۸۱۲۸۰</a>
+      </div>
+
+      <div class="card contact-card">
+        <h3>واتساپ</h3>
+        <a href="https://wa.me/989363881280">ارسال پیام در واتساپ</a>
+      </div>
+
+      <div class="card contact-card">
+        <h3>اینستاگرام</h3>
+        <a href="https://instagram.com/ariansaghf" target="_blank" rel="noopener">مشاهده صفحه اینستاگرام</a>
+      </div>
+
+      <div class="card contact-card">
+        <h3>منطقه خدماتی</h3>
+        <a href="#">تهران</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer>
+  <div class="container">
+    تمامی حقوق محفوظ است | آریان سقف | ariansaghf
+  </div>
+</footer>
+
+
+<a href="https://wa.me/989363881280" class="whatsapp">واتساپ</a>
+
 </body>
 </html>
